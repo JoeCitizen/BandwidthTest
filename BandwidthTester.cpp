@@ -460,6 +460,8 @@ HRESULT RunBandwidthTestGpu(std::ostream& output, ComPtr<IDXGIAdapter1> pAdapter
     {
         tc.OutputMeasurements(output, gpuFreqInv);
     }
+
+    return S_OK;
 }
 
 void RunBandwidthTestCpu(std::ostream& output)
